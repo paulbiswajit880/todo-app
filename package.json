@@ -1,0 +1,22 @@
+{
+  "name": "todo-app",
+  "private": true,
+  "type": "module",
+  "description": "Weekly To-Do List app (MERN): React + Tailwind client, Express + MongoDB API, deployable on Netlify.",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"npm run dev -w server\" \"npm run dev -w client\"",
+    "dev:memory": "concurrently -n api,web -c blue,green \"npm run dev:memory -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "test": "npm test -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
