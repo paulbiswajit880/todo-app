@@ -3,7 +3,7 @@
 A mobile-first to-do app. You create tasks with a date and time, and the home screen groups them by
 week (Monday to Sunday), with open and completed counts for each week.
 
-- **Live app:** _add your Netlify URL_
+- **Live app:** https://todo-app-mern-app.netlify.app
 - **Stack:** React 18 + Vite + Tailwind CSS · Node.js + Express · MongoDB (Mongoose) · Netlify (static site + Functions)
 
 ## Design
